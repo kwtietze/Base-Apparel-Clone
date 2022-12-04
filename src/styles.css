@@ -1,0 +1,138 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: hsl(0, 6%, 24%);
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+script {
+    display: none;
+}
+
+.main-area {
+    background: url(/Projects/Clones/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+}
+
+.hero-mobile {
+    display: none;
+}
+
+.content-area {
+    padding: 50px 120px;
+    width: 35vw;
+}
+
+.logo {
+    height: 30px;
+    padding: 60px 0px 50px 120px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 16px;
+}
+
+.pink-heading {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    line-height: 2rem;
+}
+
+.email-area {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    padding: 20px;
+    align-items: center;
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    float: right;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    height: 57px;
+    width: 100px;
+}
+
+.hero-desktop {
+    right: 0;
+    height: 100vh;
+    position: absolute;
+}
+
+
+.attribution { 
+    color: white;
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 1000px){
+    .hero-desktop {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: block;
+        width: 100vw;
+    }
+
+    .logo {
+        height: 20px;
+        padding: 26px;
+    }
+
+    .content-area {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    p {
+        margin: 0 26px;
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 75px;
+    }
+
+    .email-area {
+        margin: 30px 26px;
+    }
+
+    button {
+        width: 75px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
